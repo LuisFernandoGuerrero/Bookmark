@@ -1,0 +1,74 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4em 0;
+    background: $azul;
+    @include desktop {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 2em 4em;
+        align-items: center;
+    }
+    .logo {
+        width: 70%;
+        margin-bottom: 2em;
+        @include desktop {
+            margin-bottom: 0;
+            width: 20%;
+        }
+    }
+
+    .menu {
+        line-height: 5em;
+        @include desktop {
+            display: flex;
+            justify-content: flex-end;
+            width: 60%;
+        }
+        li {
+            text-align: center;
+            @include desktop {
+                margin-left: 4em;
+                &:nth-child(1) {
+                    margin-left: 0;
+                }
+            }
+            a {
+                color: $gris;
+                font-size: 1.5em;
+                text-transform: uppercase;
+                transition: 1s;
+                &:hover {
+                    color: $naranja;
+                }
+            }
+        }
+    }
+
+    .social {
+        display: flex;
+        align-items: flex-end;
+        margin-top: 5%;
+        @include desktop {
+            margin-top: 0;
+        }
+        li {
+            border: none;
+            margin: 0 2em;
+            cursor: pointer;
+            i {
+                color: $blanco;
+                font-size: 2em;
+                transition: 1s;
+                &:hover {
+                    color: $naranja;
+                }
+            }
+            @include desktop {
+                margin: 0 1em;
+            }
+        }
+    }
+}
+

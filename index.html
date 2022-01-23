@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/build/css/app.css">
+    <link rel="shortcut icon" href="/build/img/favicon-32x32.webp" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"
+        integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/EaselPlugin.min.js"></script>
+    <title>PRUEBA</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="contenidoHeader">
+            <div class="sup">
+                <div class="img">
+                    <img id="imagen" src="/build/img/logo-bookmark.svg" alt="Logo">
+                </div>
+                <div class="mobile-menu">
+                    <img src="/build/img/icon-hamburger.svg" alt="Logo">
+                </div>
+                <ul class="menu">
+                    <li class="item"><a href="#features">features</a></li>
+                    <li class="item"><a href="#download">pricing</a></li>
+                    <li class="item"><a href="#contactUs">contact</a></li>
+                    <li><a href="">login</a></li>
+
+                    <ul class="social">
+                        <li><img src="/build/img/icon-facebook.svg" alt="facebook"></li>
+                        <li><img src="/build/img/icon-twitter.svg" alt="facebook"></li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="hero" id="hero">
+        <div class="imgHero">
+            <img src="/build/img/illustration-hero.svg" alt="">
+        </div>
+        <div class="infoHero">
+            <h4 class="titulo">a simple bookmark manager</h4>
+            <p class="descripcion">A clean and simple interface to organize your favourite websites. Open a new browser
+                tab and see your sites load instantly. Try it for free.</p>
+            <div class="botones">
+                <div class="button">
+                    <a href="">Get it on chrome</a>
+                </div>
+                <div class="button">
+                    <a href="">get it on firefox</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="features" id="features">
+        <div class="infoFeatures">
+            <h4 class="titulo">features</h4>
+            <p class="descripcion">Our aim is to make it quick and easy for you too access your favourite websites. Your
+                bookmarks sync between your devices so you can access them on the go.</p>
+        </div>
+
+        <div class="centro">
+            <div class="lista">
+                <button class="btn active" data-target="#oneOption">simple bookmarking</button>
+                <button class="btn" data-target="#twoOption">speedy searching</button>
+                <button class="btn" data-target="#threeOption">easy sharing</button>
+            </div>
+
+            <div class="contenidoLista">
+                <div class="contenido active" id="oneOption">
+                    <div class="image">
+                        <img class="" src="/build/img/illustration-features-tab-1.svg" alt="1">
+                    </div>
+                    <div class="info">
+                        <h4 class="titulo">Bookmark in one click</h4>
+                        <p class="descripcion">Organize your bookmarks however you like. Our simple drag-and-drop
+                            interface gives you complete control over how you manage your favourite sites.</p>
+                        <div class="button">
+                            <a href="">more info</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contenido" id="twoOption">
+                    <div class="image">
+                        <img class="" src="/build/img/illustration-features-tab-2.svg" alt="2">
+                    </div>
+                    <div class="info">
+                        <h4 class="titulo">Intelligent search</h4>
+                        <p class="descripcion">Our powerful search feature will help you find saved sites in no time at
+                            all. No need to trawl through all of your bookmarks.</p>
+                        <a href="">more info</a>
+                    </div>
+                </div>
+                <div class="contenido" id="threeOption">
+                    <div class="image">
+                        <img class="" src="/build/img/illustration-features-tab-3.svg" alt="3">
+                    </div>
+                    <div class="info">
+                        <h4 class="titulo">Share your bookmarks</h4>
+                        <p class="descripcion">Easily share your bookmarks and collections with others. Create a
+                            shareable link that you can send at the click of a button.</p>
+                        <a href="">more info</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <section class="download" id="download">
+        <h4 class="titulo">Download the extension</h4>
+        <p class="descripcion">We've got more browsers in the pipeline. Please do let us know if you've got a favourite
+            you'd like us to prioritize.</p>
+
+        <div class="cards">
+            <div class="card">
+                <img src="/build/img/logo-chrome.svg" alt="Chrome">
+                <h4 class="titulo">Add to Chrome</h4>
+                <p class="descripcion">Minimum version 62</p>
+
+                <div class="button">
+                    <a href="">add & install extension</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/build/img/logo-firefox.svg" alt="Chrome">
+                <h4 class="titulo">Add to Firefox</h4>
+                <p class="descripcion">Minimum version 55</p>
+
+                <div class="button">
+                    <a href="">add & install extension</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/build/img/logo-opera.svg" alt="Chrome">
+                <h4 class="titulo">Add to Opera</h4>
+                <p class="descripcion">Minimum version 46</p>
+
+                <div class="button">
+                    <a href="">add & install extension</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="preguntas" id="preguntas">
+        <h4 class="titulo">Frequently asked questions</h4>
+        <p class="descripcion">Here are some of our FAQs. If you have any other questions you'd like answered please
+            feel free to email us.</p>
+        <div class="accordion">
+            <div class="contenidoAccordion">
+                <div class="elementoAccordion">What is Bookmark?</div>
+                <div class="contenidoElemento">
+                    <p>
+                        Vivamus luctus eros aliquet convallis uitricies. Mauris augue massa
+                        ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies.
+                        Mauris
+                        augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis
+                        ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+                    </p>
+                </div>
+            </div>
+            <div class="contenidoAccordion">
+                <div class="elementoAccordion">How can I request a new browser?</div>
+                <div class="contenidoElemento">
+                    <p>
+                        Vivamus luctus eros aliquet convallis uitricies. Mauris augue massa
+                        ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies.
+                        Mauris
+                        augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis
+                        ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+                    </p>
+                </div>
+            </div>
+            <div class="contenidoAccordion">
+                <div class="elementoAccordion">Is there a mobile app?</div>
+                <div class="contenidoElemento">
+                    <p>
+                        Vivamus luctus eros aliquet convallis uitricies. Mauris augue massa
+                        ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies.
+                        Mauris
+                        augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis
+                        ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+                    </p>
+                </div>
+            </div>
+            <div class="contenidoAccordion">
+                <div class="elementoAccordion">What about other Chromium browsers?</div>
+                <div class="contenidoElemento">
+                    <p>
+                        Vivamus luctus eros aliquet convallis uitricies. Mauris augue massa
+                        ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies.
+                        Mauris
+                        augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis
+                        ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="button">
+            <a href="">more info</a>
+        </div>
+    </section>
+    <section class="contactUs" id="contactUs">
+        <div class="contenidoContact">
+            <span>35.000 + already joined</span>
+            <p>stay up-to-date with what we're doing</p>
+            <form action="#contactUs">
+                <input type="text" id="email" class="inputEmail" placeholder="Enter your email address">
+                <span class="error">Whoops, make sure it's on email</span>
+                <span class="success">Successfull email.</span>
+                <input type="submit" class="buttonEmail" value="contact Us"
+                    onClick="comprobarEmail(form.email.value)" />
+            </form>
+        </div>
+    </section>
+    <footer class="footer" id="footer">
+        <img class="logo" src="/build/img/logo-bookmark-footer.svg" alt="Logo">
+        <ul class="menu">
+            <li class="item"><a href="">features</a></li>
+            <li class="item"><a href="">pricing</a></li>
+            <li class="item"><a href="">contact</a></li>
+        </ul>
+        <ul class="social">
+            <li><i class="fab fa-facebook-square"></i></li>
+            <li><i class="fab fa-twitter"></i></li>
+        </ul>
+    </footer>
+    <script src="/build/js/bundle.min.js"></script>
+</body>
+
+</html>

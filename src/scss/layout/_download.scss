@@ -1,0 +1,84 @@
+.download {
+    text-align: center;
+    margin-top: 25em;
+    padding-top: 5em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include desktop {
+        margin-top: 0;
+    }
+    .titulo {
+        text-transform: none;
+        margin-bottom: 1em;
+    }
+    .descripcion {
+        width: 78%;
+        @include desktop {
+            width: 30%;
+        }
+    }
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    @include desktop {
+        flex-direction: row;
+    }
+    .card {
+        width: 90%;
+        -webkit-box-shadow: 0px 12px 23px -6px rgba(155, 156, 161, 1);
+        -moz-box-shadow: 0px 12px 23px -6px rgba(155, 156, 161, 1);
+        box-shadow: 0px 12px 23px -6px rgba(155, 156, 161, 1);
+        margin-bottom: 4em;
+        border-radius: 2em;
+        padding: 2.5em 0em;
+        padding-bottom: 2em;
+        animation: 1s cards infinite;
+
+        @include desktop {
+            max-width: 18%;
+            margin-left: 2em;
+
+            &:nth-child(1) {
+                margin-left: 0;
+            }
+
+            &:nth-child(2) {
+                transform: translateY(30%);
+            }
+
+            &:nth-child(3) {
+                transform: translateY(60%);
+            }
+        }
+
+        .titulo {
+            margin-bottom: 0em;
+            padding: 0em 1em;
+            @include desktop {
+                font-size: 1.8em;
+            }
+        }
+        .descripcion {
+            width: 100%;
+            @include desktop {
+                font-size: 0.9em;
+            }
+        }
+
+        .button {
+            margin-top: 2em;
+            border-top: 6px dotted $gris;
+            padding-top: 2em;
+            a {
+                margin: 3em 0;
+            }
+        }
+    }
+}

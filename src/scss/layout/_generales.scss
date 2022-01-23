@@ -1,0 +1,20 @@
+.button {
+    margin-top: 2em;
+    width: 100%;
+    position: relative;
+    a {
+        padding: 1em 2.7em;
+        position: relative;
+        background-color: $violeta;
+        border-radius: 0.4em;
+        color: $blanco;
+        font-weight: bold;
+        width: 90%;
+        -webkit-box-shadow: -3px 6px 9px -3px rgba(155, 156, 161, 1);
+        -moz-box-shadow: -3px 6px 9px -3px rgba(155, 156, 161, 1);
+        box-shadow: -3px 6px 9px -3px rgba(155, 156, 161, 1);
+        text-transform: capitalize;
+        margin: 3em 0;
+        transition: 1s;
+    }
+}

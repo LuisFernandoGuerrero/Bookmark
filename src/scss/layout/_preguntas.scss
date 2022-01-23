@@ -1,0 +1,80 @@
+.preguntas {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .descripcion {
+        width: 85%;
+        @include desktop {
+            width: 30%;
+        }
+    }
+    @include desktop {
+        margin-top: 10em;
+    }
+}
+
+.accordion {
+    max-width: 100%;
+    @include desktop {
+        width: 30%;
+    }
+    .contenidoAccordion {
+        width: 90%;
+        position: relative;
+        margin: 0 auto;
+        .elementoAccordion {
+            position: relative;
+            padding: 1em;
+            text-align: start;
+            border-bottom: 1px solid $gris;
+            color: $negro;
+            cursor: pointer;
+            &::before {
+                content: "";
+                background-image: url("/build/img/icon-arrow.svg");
+                background-repeat: no-repeat;
+                position: absolute;
+                width: 1em;
+                height: 1em;
+                top: 50%;
+                right: 5%;
+                transform: translateY(-50%);
+                transition: 1s;
+            }
+        }
+        .contenidoElemento {
+            position: relative;
+            height: 0;
+            overflow: hidden;
+            transition: 1.5s;
+            p {
+                font-size: 1em;
+                color: $gris;
+            }
+        }
+    }
+    .contenidoAccordion.active {
+        .elementoAccordion {
+            border-bottom: none;
+            color: $naranja;
+            font-weight: bold;
+            &::before {
+                content: "";
+                background-image: url("/build/img/icon-arrow.svg");
+                background-repeat: no-repeat;
+                position: absolute;
+                top: 50%;
+                right: 5%;
+                transform: translateY(-50%) rotate(180deg);
+                filter: invert(100%);
+            }
+        }
+        .contenidoElemento {
+            height: 18em;
+            @include desktop {
+                height: 15em;
+            }
+        }
+    }
+}
